@@ -1,2 +1,4 @@
-# College-Selection-system
-• Developed an innovative college selection system, named "CollegeExplorer," that utilizes data from external APIs to  provide students with comprehensive information about various colleges
+# Create a Registration and Login System with PHP and MySQL
+Create a Registration and Login System with PHP and MySQL
+
+Article: https://speedysense.com/create-registration-login-system-php-mysql

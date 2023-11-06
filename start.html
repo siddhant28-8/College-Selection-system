@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>PAN India University Information Bank</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+      
+      #myTable th{
+        text-align: center;
+        
+        padding-left:10px;
+      }
+       #myTable td {
+        text-align: center;
+       padding:20px;
+
+        
+      }
+      
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+      
+      #myTable tr.header, #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      </style>
+  </head>
+  <body>
+    <div class="topnav">
+        <a  href="start.html">Home</a>
+        <a href="colleges.html">Colleges</a>
+        <a href="http://localhost/loginsys/login.php">Login/Register</a>
+      </div>
+     
+      <script>
+        var i=0;
+        var images=[];
+        var time=3000;
+
+
+        images[0]='iit bombay.jpeg';
+        images[1]='ict.jpg';
+        images[2]='vjti.png';
+        images[3]='vnit.jpg';
+        
+
+        function changeImg(){
+          document.slide.src=images[i];
+           if(i<images.length-1)
+           i++;
+           else 
+           i=0;
+
+           setTimeout("changeImg()",time);
+        }
+        window.onload=changeImg;
+      </script>
+      <img name="slide" width="100%" height="400px">
+
+      <div class="container my-5">
+        <h1 class="text-center">PAN India University Information Bank</h1>
+        <p class="text-center">
+          Find information about colleges, courses, and admission processes in India.
+        </p>
+  </div>
+  
+
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+      <table id="myTable">
+        <thead>
+            <tr>
+              <th>college_name</th>
+              <th>university_name</th>
+              <th>college_type</th>
+              <th>state_name</th>
+              <th>district_name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>College of Engineering</td>
+              <td>Bharati Vidyapeeth</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>pune</td>
+            </tr>
+            <tr>
+              <td>Rajiv Gandhi Institute of Information Technology and Biotechnology</td>
+              <td>Bharati Vidyapeeth</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>pune</td>
+            </tr>
+            <tr>
+              <td>Yashwantrao Chavan Institute of Social Science Studies and Research,</td>
+              <td>Bharati Vidyapeeth</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>pune</td>
+            </tr>
+            <tr>
+              <td>A.C.E. Foundation's Maharashtra Institute of Information Technology, Chhatrapati Sankul</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University/affilated college </td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>Aditya Bahuuddeshiya Education Society's Aditya Engineering College, Telgaon Road</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>Appex Institute of Computer and Management Studies</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>BGP'S Hitech Institute of Technology, MIDC, Waluj. (Id: C-34528)</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+          
+      
+            <tr>
+              <td>Bharatiya Shikshan Bahuddeshiya Sanstha's, S.P.College of Computer Science, Barshi Naka.</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Osmanabad</td>
+            </tr>
+      
+            <tr>
+              <td>Bhaskaracharya Prathishthan Sanchalit hanumantrao Chate Computer and Management Science College</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+      
+            <tr>
+              <td>Bhausaheb Deshpande College of Biotechnology & Bioinformatics, Yogeshwari Nagar</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Jalna</td>
+            </tr>
+      
+            <tr>
+              <td>Deccan College of Computer Science and Management </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Deogiri Institute of Engineering and Management Studies</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td> Deogiri Institute of Technology and Management Studies</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Deogiri Pratishthan's Tulshi College of Computer Science</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td> Disha College of Computer Science</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Dr. G.Y.Patharikar College of Computer Science & Information Technology </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Dr. Ram Manohar Lohiya Institutions College of Bio-Science and Technology </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Everest Education Society Sanchalit, College of Engineering, Jatwada Road </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Government College of Engineering, Railway Station Road </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Gromodyogik Shikshan Mandal's Marathwada Institute of Technology Management College </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>I.I.R.W's, International Centre of Excellence in Engineering and Management</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Jijau College of Information Technology, Ambajogai </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>Krishnai College of Computer Science, Ambajogai</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>K.T. Patil College of Engineering </td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Osmanabad</td>
+            </tr>
+            <tr>
+              <td>Mahatma Basweshwar Education Society's College of Engineering</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>Marathwada Institute of Technology Engineering College, Satara Road</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Matsyodari Shikshan Sanstha's College of Engineering & Technology, Nagewadi</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Jalna</td>
+            </tr>
+            <tr>
+              <td>Maulana Azad Educational Trusts Tom Patric Institute of Computer & Information Technology</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>MGM jawaharlal Nehru College of Engineering</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Nagnathappa Halge Engineering College, Parli-Vaijnath</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Bid</td>
+            </tr>
+            <tr>
+              <td>P.E.S. College of Engineering, Nagsenvana,</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Sai Samajik Santha Sanchalit College of Engineering, Pardarigao</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Sai Shikshan Sanstha's Amberwadekar Institute of Technology,Wajuj</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Shreeyash Pratishthan's Shreeyash College of Engineering and Technology , Satara Tanda</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>Shri Tuljabhavani Temple Trust's Tuljabhavani College of Engineering, Tuljapur</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Osmanabad</td>
+            </tr>
+            <tr>
+              <td>Tanmay Bahuddeshiya Sanstha, Latur. Citizens College of Computer Science & Information Technology</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Osmanabad</td>
+            </tr>
+            <tr>
+              <td>Terna Public Charitable Trust's College of Engineering</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Osmanabad</td>
+            </tr>
+            <tr>
+              <td>Veermata Jijau Mahila College of Engineering, Sharnapur</td>
+              <td>Dr. Babasaheb Ambedkar Marathwada University</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Aurangabad</td>
+            </tr>
+            <tr>
+              <td>College of Agricultural Engineering & Technology</td>
+              <td>Dr. Balasaheb Sawant Konkan Krishi Vidyaapeeth</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ratnagiri</td>
+            </tr>
+            <tr>
+              <td>Dr. B.M. College of Agriculture Engineering & Technology</td>
+              <td>Dr. Balasaheb Sawant Konkan Krishi Vidyaapeeth</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ratnagiri</td>
+            </tr>
+           
+      
+            <tr>
+              <td>D.Y. Patil College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      
+      
+      <tr>
+              <td>Parvatibai Genba Moze College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>G.H. Raisoni Institute of Engineering & Technology </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Gokhale Edcuation Societys College of Engineering </td>    
+              <td>pune university</td>    
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Nashik</td>
+            </tr>
+      
+      <tr>
+              <td>Shri Saibaba Institute of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+      
+      <tr>
+              <td>Group of Institutions College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+      
+      <tr>
+              <td>S.N.D.College of Engineering & Research Centre </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Nashik</td>
+            </tr>
+      
+      <tr>
+              <td>Imperial College of Engineering and Research </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Rajshree Shahu College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>JSPMs Jayawantrao Sawant College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>G.N.Sapkal College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Nashik</td>
+            </tr>
+      
+      <tr>
+              <td>K.J.College of Engineering and Management </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      
+      
+      
+      
+      
+      <tr>
+              <td>Tinity College of Engineering and Research </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Matoshree College of Engineering & Research Centre </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Nashik</td>
+            </tr>
+      
+      <tr>
+              <td>Nutan Maharashtra Institute of Engineering and Technology </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Dr.Vitthalrao Vikhe Patil College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+      
+      <tr>
+              <td>Sir Vishweshwarayya College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Nashik</td>
+            </tr>
+      
+      
+      
+      
+      
+      <tr>
+              <td>Pravara Rural Engineering College </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+      
+      <tr>
+              <td>Modern College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>S.B.Patil College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Shree Ramchandra College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Shri Chhatrapati Shivaji College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+      
+      
+      
+      
+      
+      <tr>
+              <td>Subhash Kul College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Pune</td>
+            </tr>
+      
+      <tr>
+              <td>Vidya Niketan College of Engineering </td>
+              <td>pune university</td>
+              <td>University College</td>
+              <td>Maharashtra</td>
+              <td>Ahmednagar</td>
+            </tr>
+            <tr>
+              <td>Abhinav Education Society College of Engineering & Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Annasaheb Dange College of Engineering and Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Sangli</td>
+              </tr>
+              <tr>
+              <td>Aravind Gavali College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Bharati Vidyapeeth's College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>College of Engineering, KARAD</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>College of Engineering & Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Sangli</td>
+              </tr>
+              <tr>
+              <td>Dr.Daulatrao Aher College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Dr. J. J. Magdum College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>D. Y. Patil College of Engineering & Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>D.Y. Patil Education Society, D.Y. Patil Technical Campus, Faculty of
+              Engineering Talsande</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Jayawant College of Engineering & Management</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Sangli</td>
+              </tr>
+              <tr>
+              <td>Karmaveer Bhaurao Patil College of Engineering and Polytechnic</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Kolhapur Institute of Technology's College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Late Narayandas Bhavandas Chabada Institute of Engineering &
+              Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Nanasaheb Mahadik College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Sangli</td>
+              </tr>
+              <tr>
+              <td>Sanjeevan Engineering & Technology Institute</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Satara College of Engineering and Management</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+              <tr>
+              <td>Sharad Institute of Technology College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Tatyasaheb Kore Institute of Engineering & Technology</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Textile & Engineering Institute</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Kolhapur</td>
+              </tr>
+              <tr>
+              <td>Walchand College of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Sangli</td>
+              </tr>
+              <tr>
+              <td>Yashoda Technical campus, Faculty of Engineering</td>
+              <td>Shivaji University, Kolhapur</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Satara</td>
+              </tr>
+             <tr>
+              <td>Abha College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Agnihotri College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>Anjuman College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Bapurao Deshmukh Engineering College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>Bhausaheb Mulak College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>BRRC's College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Central India College of Engineering and
+              Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Cummins College of Engineering for Women</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Datta Meghe Institute of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>GH Raisoni Academy of Engineering and
+              Technology,Shraddha Park</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>GH Raisoni Engineering College, Digdoh</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>GH Raisoni Institute of Engineering and
+              Technology for Women, Hingna</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Govt Engineering College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Chandrapur</td>
+             </tr>
+             <tr>
+              <td>Gurunank Institute of Engineering and
+              Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>ITM College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>JD College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>JL Chaturvedi College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Karamvir Dadasaheb Kannamwar Engineering
+              College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Madukarrao Pandav College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Bhandara</td>
+             </tr>
+             <tr>
+              <td>Manoharbhai Engineering and Technical
+              Institute</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Gondiya</td>
+             </tr>
+             <tr>
+              <td>Manoharhai Patel Institute of Engineering
+              and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Gondiya</td>
+             </tr>
+             <tr>
+              <td>Nagarjun Institute of Engineering
+              Technology and Management</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Namdeorao Poreddywar College of Engineering
+              and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Gadchiroli</td>
+             </tr>
+             <tr>
+              <td>Om College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>Priyadarshini Engineering College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Priyadarshini Indira Gandhi College of
+              Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Priyadarshini Institute of Engineering and
+              Technology, CRPF Camp</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Rajiv Gandhi College of Engineering and
+              Research</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Rajiv Gandhi Engineering College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Chandrapur</td>
+             </tr>
+             <tr>
+              <td>Smt Bhagvati Chaturvedi College of
+              Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Smt Radhikatai Pandav College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Smt Rajsri Mulak College of Engineering for
+              Women</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Sri Babulalji Agnihotri College of
+              Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>Sri Govindrao Wanjari College of
+              Engineering and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Sri. Ramdeobaba Kamla Nehru Engineering
+              College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Sri Sai College of Engineering and
+              Technology Bhadrawati</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Chandrapur</td>
+             </tr>
+             <tr>
+              <td>Sri Shankarprasad College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>St. Vincent Palloti College of Engineering
+              and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Suresh Deshmukh College of Engineering</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Wardha</td>
+             </tr>
+             <tr>
+              <td>Suryoday College of Engineering and
+              Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Vanganga College of Engineering and
+              Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Vidyaniketan Institute of Engineering and
+              Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Vilasrao Deshmukh College of Engineering
+              and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>VM Institute of Engineering and Technology</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+             <tr>
+              <td>Yashwantrao Chavan Engineering College</td>
+              <td>Nagpur University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Nagpur</td>
+             </tr>
+      
+             <tr>
+              <td>Saraswati Education Societys Yadavrao Tasgaonkar College of Engineeting & Management</td>
+              <td>Mumbai University</td>
+              <td>Affiliated College</td>
+              <td>Maharashtra</td>
+              <td>Raigarh</td>
+            </tr>
+           <tr>
+    <td>ANJUMAN-I-ISLAMS SCHOOL OF ENGINEERING AND TECHNOLOGY ATANJUMAN-I-ISLAM KALSEKAR
+        TECHNICAL</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+
+<tr>
+    <td><a href="C:\website project\collegesinfo\athrva.html">Atharva Educational Trusts College of Engineering</a></td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+
+<tr>
+    <td>Bharati Vidyapeetds College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>tdane</td>
+</tr>
+
+<tr>
+    <td>Datta Meghe College of Engineerin</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+
+<tr>
+    <td>Excelsior Education Societys K C College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>tdane</td>
+</tr>
+
+<tr>
+    <td>Fr Conceicao Rodrigues College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+
+<tr>
+    <td> K J Somaiya College of Engineering Vidyanagar </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td>K. J. Somaiya Institute of Engineering and Information Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Konkan Education Societys Narayan Nagu Patil Engineering College</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Konkan Gyanpeetd College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Koti Vidya Charitable Trusts Alamini Ratnamala Institute of Engineering & Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>tdane</td>
+</tr>
+<tr>
+    <td>Mahatma Education Societys Pillais HOCL College of Engg. & Tech HOC Educational Campus</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Mahatma Education Societys Pillais Institute of Information Technology Engineering Media Studies & Research
+        Composite College</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Mahatma Gandhi Missions College of Engineering and Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Mandar Education Societys Rajaram Shinde College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Ratnagiri</td>
+</tr>
+<tr>
+    <td>National environmental engineering research institute</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Parshvanatd Charitable Trusts Parshvanatd College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>tdane</td>
+</tr>
+<tr>
+    <td>Rizvi Education Societys College of Engineering </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+
+
+
+<tr>
+    <td> Saraswati Education Societys Saraswati College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Saraswati Education Societys Yadavrao Tasgaonkar Institute of Engineering Technology </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Sardar Patel College of Engineering </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td><a href="C:\website project\collegesinfo\LR _Tiwari.html">SHREE L R TIWARI COLLEGE OF ENGINEERING</a></td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>thane</td>
+</tr>
+<tr>
+    <td>Shri Vile Parle Kelavani Mandals Dwarkadas J. Sanghvi College of Engineering </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td>Sindhudurg Shikshan Prasarak Mandal College of Engineering </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Sindhudurg</td>
+</tr>
+<tr>
+    <td>Smt. Indira Gandhi Engineering College </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Society for applied microwave electronics engg. and research department of electronics </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td>Soutd Indian Education Scocietys College of Engineering </td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td>St. Francis Institute of Technology (Engineering College)</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+
+<tr>
+    <td> Suman Education Trust Dilkap Research Institute of Engineeing & Management Studies</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+    <td>Terna Public Charitable Trusts Terna College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>thadomal Shahani Engineering College</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai Suburban</td>
+</tr>
+<tr>
+    <td><a href="C:\website project\collegesinfo\thakur.html">thakur College of Engineering & Technology</a></td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>the Bombay Xavierian Corporation Pvt. Ltds College of Engineering</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Vidyavardhinis College of Engineering and Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>tdane</td>
+</tr>
+<tr>
+    <td>VIDYA PRASARAK MANDAL MAHARSHI PARSHURAM COLLEGE OF ENGINEERING</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Ratnagiri</td>
+</tr>
+<tr>
+    <td>Watumall Institute of Electronic Engineering and Computer Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Mumbai</td>
+</tr>
+<tr>
+    <td>Yadavrao Tasgaonkar Institute of Engineering Technology</td>
+    <td>Mumbai University</td>
+    <td>Affiliated College</td>
+    <td>Maharashtra</td>
+    <td>Raigarh</td>
+</tr>
+<tr>
+  <td> Indian Institute of Technology - [IITK], Kanpur</td>
+  <td>IIT Kanpur</td>
+  <td>Government college</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Harcourt Butler Technical University, Kanpur </td>
+  <td>HBTU Kanpur</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Pranveer Singh Institute of Technology (PSIT), Kanpur </td>
+  <td>UPTU </td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Dr. Ambedkar Institute of Technology for Handicapped Kanpur </td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Allenhouse Institute of Technology</td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Maharana Pratap Engineering College</td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Bhabha College of engineering</td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>PSIT College of Engineering (PSITcoe)</td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+<tr>
+  <td>Krishna Girls Engineering College</td>
+  <td>UPTU</td>
+  <td>University/Affiliated College</td>
+  <td>uttar pradesh</td>
+  <td>kanpur</td>
+</tr>
+      
+          </tbody>
+      
+      </table>
+      
+      <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+      </script>
+  
+  </body>
+</html>

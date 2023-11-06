@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+
+  }
+  h3{
+    text-decoration-color: blue;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
+  
+.col-sm-4{
+   background-color: blueviolet;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left:140px;
+
+    }
+    .col-sm-5{
+        background-color: blueviolet;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top:50px;
+        margin-left:380px;
+        
+    }
+    
+    .btn{
+    background-color: #000;
+    border: .5px solid crimson;
+    border-radius: 10px;
+    color: #fff;
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left:15px ;
+    padding-right: 15px;
+    box-shadow: 0 0 30px 0 crimson,
+                0 0 30px 0 crimson,
+                0 0 10px 0 crimson inset;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
+    h1,h2,h3,h4{
+        font-family: Arial, sans-serif;
+    }
+    body{
+        background-color: aquamarine;
+    }
+  
+  </style>
+</head>
+<body>
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="iit bombay.jpeg" alt="Image" height="400px">
+        <div class="carousel-caption">
+          <h3><b>Indian Institute of Technology,Bombay</b></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="vjti.png" alt="Image" height="400px">
+        <div class="carousel-caption">
+          <h3> <b>Veermata Jijabai Technological Institute</b> </h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3><b>Find Best Engineering colleges of Your Choice </b></h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+        <h2><b>Find University wise Engineering colleges </b> </h2>
+        <button class="btn"><a href="C:\website project\collegesinfo\universitywise.html"><h3>Search<h3></h3></a></button>
+      
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2><b>Find State wise Engineering Colleges </b> </h2>
+            <button class="btn"><a href="C:\website project\collegesinfo\statewise.html"><h3>Search<h3></h3></a></button>
+          
+        </div><br>
+        <div class="row">
+            <div class="col-sm-5">
+                <h2><b>Find District wise Engineering colleges </b> </h2>
+                <button class="btn"><a href="C:\website project\collegesinfo\districtwise.html"><h3>Search<h3></h3></a></button>
+              
+            </div>
+    
+    </div>
+  </div>
+</div><br>
+
+</body>
+  
+</html>
